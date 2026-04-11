@@ -17,8 +17,37 @@ int main(void){
         printf("Valor invalido!\n");
         return 0;
     }
+    n100 = valor / 100;
+    resto = valor % 100;
 
-    
+    n50 = resto / 50;
+    resto = resto % 50;
 
+    n10 = resto / 10;
+    resto = resto % 10;
+
+    n5 = resto / 5;
+    resto = resto % 5;
+
+    n1 = resto;
+
+    // Saída de dados
+    printf("\nNotas fornecidas:\n");
+
+    if(n100 > 0)
+        printf("%d notas de 100\n", n100);
+
+    if(n50 > 0)
+        printf("%d notas de 50\n", n50);
+
+    if(n10 > 0)
+        printf("%d notas de 10\n", n10);
+
+    if(n5 > 0)
+        printf("%d notas de 5\n", n5);
+
+    if(n1 > 0)
+        printf("%d notas de 1\n", n1);
+        
     return 0;
 }
