@@ -2,10 +2,12 @@
 #include <stdlib.h>
 
 int main(void){
+    //Variáveis
     int dia, mes, ano;
     int bissexto = 0;
     int diasNoMes;
 
+    //Entrada de dados
     printf("Digite a data: ");
     scanf("%d/%d/%d", &dia, &mes, &ano);
     fflush(stdin);
