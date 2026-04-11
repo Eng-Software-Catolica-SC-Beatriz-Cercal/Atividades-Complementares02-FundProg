@@ -5,7 +5,7 @@ int main(void){
     //Variáveis
     int ano;
 
-    //Entrada de dadis
+    //Entrada de dados
     printf("Digite um ano: ");
     scanf("%d", &ano);
      fflush(stdin);
