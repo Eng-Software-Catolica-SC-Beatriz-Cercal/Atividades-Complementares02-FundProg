@@ -9,6 +9,8 @@ int main(void){
     //Entrada de dados
     printf("Digite a temperatura: ");
     scanf("%d", &temperatura);
+    fflush(stdin);
+
 
     //Processamento e saída de dados
     if (temperatura >= 1000){

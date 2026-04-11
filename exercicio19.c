@@ -2,11 +2,14 @@
 #include <stdlib.h>
 
 int main(void){
+    //Variáveis
     int ano;
 
+    //Entrada de dadis
     printf("Digite um ano: ");
     scanf("%d", &ano);
-        fflush(stdin);
+     fflush(stdin);
+     //Processamento e saída
     if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)){
         printf("Ano bissexto\n");
     } else {
