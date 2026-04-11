@@ -31,22 +31,7 @@ int main(void){
      if(delta > 0){
         printf("Delta positivo: duas raizes reais\n");
 
-        x1 = (-b + sqrt(delta)) / (2 * a); //SQRT é responsável pelo cálculo de raiz quadrada
-        x2 = (-b - sqrt(delta)) / (2 * a);
-
-        printf("X1 = %.2f\n", x1);
-        printf("X2 = %.2f\n", x2);
-    }
-    else if(delta == 0){
-        printf("Delta igual a zero\n");
-
-        x1 = -b / (2 * a);
-
-        printf("X = %.2f\n", x1);
-    }
-    else{
-        printf("Delta negativo\n");
-    }
-
+       // x1 = (-b + sqrt(delta)) / (2 * a); //SQRT é responsável pelo cálculo de raiz quadrada
+       // x2 = (-b - sqrt(delta)) / (2 * a);
     return 0;
 }
