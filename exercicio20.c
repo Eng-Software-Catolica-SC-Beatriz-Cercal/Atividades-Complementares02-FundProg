@@ -8,6 +8,7 @@ int main(void){
 
     printf("Digite a data: ");
     scanf("%d/%d/%d", &dia, &mes, &ano);
+    fflush(stdin);
 
     //Processamento
     if (ano <= 0){

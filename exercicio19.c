@@ -6,6 +6,7 @@ int main(void){
 
     printf("Digite um ano: ");
     scanf("%d", &ano);
+        fflush(stdin);
     if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0)){
         printf("Ano bissexto\n");
     } else {
