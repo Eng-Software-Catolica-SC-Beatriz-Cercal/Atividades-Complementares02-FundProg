@@ -3,20 +3,29 @@
 
 int main(void){
     //Variáveis
-    int a,b,c;
+    float a,b,c;
+    float delta, x1, x2;
+
 
     //Entrada de dados
     printf("Equacao: a2 +bx + c");
     printf("Digite o valor de A: ");
-    scanf("%d", &a);
+    scanf("%f", &a);
+
+    if(a == 0){
+        printf("Erro\n");
+        return 0;
+    }
      fflush(stdin);
      printf("Digite o valor de B: ");
-    scanf("%d", &b);
+    scanf("%f", &b);
      fflush(stdin);
      printf("Digite o valor de c: ");
-    scanf("%d", &c);
+    scanf("%f", &c);
      fflush(stdin);
      //Processamento e saída
-    
+    delta = (b * b) - (4 * a * c);
+    printf("\nDelta = %.2f\n", delta);
+
     return 0;
 }
