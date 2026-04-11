@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main(void){
     //Variáveis
@@ -11,12 +12,12 @@ int main(void){
     printf("Equacao: a2 +bx + c");
     printf("Digite o valor de A: ");
     scanf("%f", &a);
+    fflush(stdin);
 
     if(a == 0){
         printf("Erro\n");
         return 0;
     }
-     fflush(stdin);
      printf("Digite o valor de B: ");
     scanf("%f", &b);
      fflush(stdin);
@@ -26,6 +27,26 @@ int main(void){
      //Processamento e saída
     delta = (b * b) - (4 * a * c);
     printf("\nDelta = %.2f\n", delta);
+
+     if(delta > 0){
+        printf("Delta positivo: duas raizes reais\n");
+
+        x1 = (-b + sqrt(delta)) / (2 * a); //SQRT é responsável pelo cálculo de raiz quadrada
+        x2 = (-b - sqrt(delta)) / (2 * a);
+
+        printf("X1 = %.2f\n", x1);
+        printf("X2 = %.2f\n", x2);
+    }
+    else if(delta == 0){
+        printf("Delta igual a zero\n");
+
+        x1 = -b / (2 * a);
+
+        printf("X = %.2f\n", x1);
+    }
+    else{
+        printf("Delta negativo\n");
+    }
 
     return 0;
 }
