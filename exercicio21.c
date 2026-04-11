@@ -8,15 +8,23 @@ int main(void){
     //Entrada de dados
     printf("Infeccao nos pulmoes (0-nao / 1-sim): ");
     scanf("%d", &infeccao);
+    fflush(stdin);
+
 
     printf("Temperatura (0-normal / 1-anormal): ");
     scanf("%d", &temp);
+    fflush(stdin);
+
 
     printf("Coriza (0-nao / 1-sim): ");
     scanf("%d", &coriza);
+    fflush(stdin);
+
 
     printf("Espirros (0-nao / 1-sim): ");
     scanf("%d", &espirro);
+    fflush(stdin);
+
 
     //Processamento e saída
     if (infeccao == 1 && temp == 1){
