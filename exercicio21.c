@@ -15,6 +15,27 @@ int main(void){
     printf("Coriza (0-nao / 1-sim): ");
     scanf("%d", &coriza);
 
-    
+    printf("Espirros (0-nao / 1-sim): ");
+    scanf("%d", &espirro);
+
+    //Processamento e saída
+    if (infeccao == 1 && temp == 1){
+        printf("Diagnostico: Pneumonia\n");
+    }
+    else {
+        //Processamento
+        total = infeccao + temp + coriza + espirro;
+
+        if (total == 1){
+            printf("Diagnostico: Resfriado\n");
+        }
+        else if (total >= 2){
+            printf("Diagnostico: Gripe\n");
+        }
+        else {
+            printf("Sem sintomas suficientes\n");
+        }
+    }
+
     return 0;
 }
