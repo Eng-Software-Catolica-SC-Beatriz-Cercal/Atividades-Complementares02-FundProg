@@ -18,5 +18,15 @@ int main(void){
         return 0;
     }
 
+    // Processamento
+    c = num / 100;
+    resto = num % 100;
+
+    d = resto / 10;
+    u = resto % 10;
+
+    // Saída de dados
+    printf("\n%d centenas, %d dezenas e %d unidades\n", c, d, u);
+
     return 0;
 }
